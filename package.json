@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@ovac/ng-currency-format",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A currency formatter for Angular JS",
   "main": "src/index.js",
   "scripts": {
