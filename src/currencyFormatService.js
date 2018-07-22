@@ -12,7 +12,7 @@
  * Use this directive to filter get currency symbols, names, etc.
  * https://ovac4u.github.io/ov-currency-filter/
  */
- export default function currencyFormatService(ovacCurrencyFormatCurrencyFormat, ovacCurrencyFormatCurrencyNumberFormat){
+ function currencyFormatService(ovacCurrencyFormatCurrencyFormat, ovacCurrencyFormatCurrencyNumberFormat){
 
     let currencies = ovacCurrencyFormatCurrencyFormat;
 
@@ -64,3 +64,5 @@
 }
 
  currencyFormatService.$inject = ['ovacCurrencyFormatCurrencyFormat','ovacCurrencyFormatCurrencyNumberFormat'];
+
+ export default currencyFormatService;

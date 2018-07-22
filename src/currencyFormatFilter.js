@@ -12,7 +12,7 @@
  * Use this directive to filter get currency symbols, names, etc.
  * https://ovac4u.github.io/ovac-currency-filter/
  */
- export default function currencyFormatFilter($rootScope, $filter, ovacCurrencyFormatService) {
+function currencyFormatFilter($rootScope, $filter, ovacCurrencyFormatService) {
 
     return function(amount, currencyCode, html) {
 
@@ -68,3 +68,5 @@
 }
 
  currencyFormatFilter.$inject = ['$rootScope', '$filter', 'ovacCurrencyFormatService'];
+
+ export default currencyFormatFilter; 
