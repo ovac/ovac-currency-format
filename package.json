@@ -1,0 +1,38 @@
+{
+  "name": "@ovac/ng-currency-format",
+  "version": "1.0.0",
+  "description": "A currency formatter for Angular JS",
+  "main": "src/index.js",
+  "scripts": {
+      "dev": "npm run development",
+      "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch": "npm run development -- --watch",
+      "watch-poll": "npm run watch -- --watch-poll",
+      "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "prod": "npm run production",
+      "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/ovac/ovac-currency-format"
+  },
+  "keywords": [
+    "angularjs",
+    "currency",
+    "format",
+    "filter",
+    "service",
+    "name"
+  ],
+  "author": "Victor O. Ariama <iamovac@gmail.com> (ovac4u)",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "currency-format": "^1.0.10",
+    "currency-number-format": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-angularjs-annotate": "^0.9.0",
+    "laravel-mix": "^2.1.11"
+  }
+}
