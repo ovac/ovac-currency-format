@@ -15,9 +15,7 @@
 
  const namespace = 'ovacCurrencyFormat'; export default namespace;
 
-    angular
-
-    .module( namespace , [])
+ angular.module( namespace , [])
 
     .filter(`${namespace}`, require('./currencyFormatFilter').default)
 

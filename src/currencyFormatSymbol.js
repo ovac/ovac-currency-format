@@ -12,7 +12,8 @@
  * Use this directive to filter get currency symbols, names, etc.
  * https://ovac4u.github.io/ovac-currency-filter/
  */
-function currencyFormatSymbol($rootScope, $filter, ovacCurrencyFormatService) {
+ /* @ngInject */
+ export default function currencyFormatSymbol($rootScope, $filter, $sce, ovacCurrencyFormatService) {
 
     return function(currencyCode) {
 
@@ -23,7 +24,3 @@ function currencyFormatSymbol($rootScope, $filter, ovacCurrencyFormatService) {
         return !(currency && currency.uniqSymbol ) || currency.uniqSymbol.grapheme;
     }
 }
-
- currencyFormatService.$inject = ['$rootScope', '$filter', 'ovacCurrencyFormatService'];
-
-export default currencyFormatSymbol;
