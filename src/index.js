@@ -23,6 +23,8 @@
 
     .filter(`${namespace}`, require('./currencyFormatFilter').default)
 
+    .filter(`${namespace}Symbol`, require('./currencyFormatSymbol').default)
+
     .factory(`${namespace}Service`, require('./currencyFormatService').default)
 
     // Dependencies
